@@ -10,31 +10,41 @@
     <title>Login</title>
 </head>
 <body>
+    <!-- Background Image with Logo -->
     <div id="fixed-image">
-        <span id="logo">LitLens</span>
+        <div id="logo">
+            <span id="logo-1">Lit</span><span id="logo-2">Lens</span>
+        </div>
     </div>
+
+    <!-- Login Form -->
     <div class="login">
         <h1>Login</h1>
         <div class="login-content">
             <form action="/login" method="post">
                 <div>
-                    <label for="username">Username: </label>
-                    <input type="text" id="username" name="username" placeholder="username">
+                    <label for="username">Email:</label>
+                    <input type="email" id="username" name="username" placeholder="Email">
                 </div>
                 <div>
-                    <label for="password">password</label>
-                    <input type="password" id="password" name="password" placeholder="password">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
                 </div>
-
                 <button type="submit">Login</button>
-                <p>Dont have an account> <a href="./sign-up.html">sign-up</a></p>
-                <p>or connect with</p>
-                <img src="./public/images/google.svg" alt="">
-                <span>Login with google</span>
-
-
+                <p>Don’t have an account? <a href="./sign-up.html" id="sign-up">Sign-up</a></p>
+                <p class="social">or connect with</p>
             </form>
+        </div>
+        <div class="google">
+            <div>
+                <img src="./public/images/google.svg" alt="Google Icon">
+                <a class="btn btn-block" href="/auth/google" role="button">
+                Log In with Google
+                </a>
+            </div>
+            
         </div>
     </div>
 </body>
+
 </html>

@@ -7,25 +7,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/auth.css">
-    <title>Login</title>
+    <title>Sign-up</title>
 </head>
 <body>
+    <!-- Background Image with Logo -->
     <div id="fixed-image">
-        <span id="logo">LitLens</span>
+        <div id="logo">
+            <span id="logo-1">Lit</span><span id="logo-2">Lens</span>
+        </div>
     </div>
-    <div class="login">
-        <h1>Login</h1>
-        <div class="login-content">
-            <form action="/login" method="post">
-                <label for="name">First Name:</label>
-                <input type="text" id="name" name="user_name" />
-                <label for="name">Last Name:</label>
-                <input type="text" id="name" name="user_name" />
-                <label for="user_email">Email Address:</label>
-                <input type="email" id="user_email" name="email" placeholder="you@example.com">
 
+    <!-- Login Form -->
+    <div class="register">
+        <h1>Sign-up</h1>
+        <div class="register-content">
+            <form action="/register" method="post">
+                <div class="name">
+                    <div>
+                        <label for="first-name">First Name: </label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First-name">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name: </label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last-name">
+                    </div>
+
+                    
+                </div>
+                <div>
+                    <label for="username">Email:</label>
+                    <input type="email" id="username" name="username" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <button type="submit">Login</button>
+                <p>Have an account? <a href="./sign-up.html" id="sign-up">Log-in</a></p>
+                <p class="social">or connect with</p>
             </form>
+        </div>
+        <div class="google">
+            <div>
+                <img src="./public/images/google.svg" alt="Google Icon">
+                <a class="btn btn-block" href="/auth/google" role="button">
+                Log In with Google
+                </a>
+            </div>
+            
         </div>
     </div>
 </body>
+
 </html>

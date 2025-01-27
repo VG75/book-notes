@@ -1,0 +1,200 @@
+/* General Body Styling */
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #AED5CB;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: right;
+}
+
+/* Logo Styling */
+#logo-1 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 100;
+    
+    font-family: 'poppins';
+}
+#logo-2 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 400;
+    
+    font-family: 'poppins';
+}
+
+#logo {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    background-color: rgba(98, 91, 91, 0.5);
+    width: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Background Image Section */
+#fixed-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/login-book.jpg');
+    
+    height: 100vh;
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Login Form Container */
+.login {
+    backdrop-filter: blur(30px); 
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.25); /* Slightly more opaque */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
+    position: fixed;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Glassy border */
+    border-radius: 15px;
+    padding: 20px 30px;
+    width: 30%;
+    color: white;
+    text-align: center;
+    background-color: #057476;
+    background: linear-gradient(145deg, #4ecdc4, #2e8b8d);
+    
+}
+
+/* Headline Styling */
+.login h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Label Styling */
+.login label {
+    display: block;
+    text-align: left;
+    padding-bottom: 8px;
+    font-size: 1rem;
+}
+
+
+/* Input Field Styling */
+.login input {
+    box-sizing: border-box;
+    padding: 13px;
+    width: 100%;
+    border: 1px solid white; /* Light border */
+    text-decoration: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    display: block;
+    position: static;
+    font-weight: 700;
+    font-size: 17px;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Placeholder Color */
+.login input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button Styling */
+.login button {
+    padding: 10px 15px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    background: #ffffff;
+    color: #2e8b8d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login button:hover {
+    background: rgb(46, 139, 141, 0.8);
+    opacity: 0.5;
+    color: #ffffff;
+}
+/* Links and Extra Text */
+.login p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.login a {
+    color: #97dede;
+    text-decoration: none;
+}
+
+#sign-up:hover {
+    text-decoration: underline;
+    
+}
+
+/* Social Login */
+
+.social {
+    border-top: 1px white solid;
+    padding-top: 8px;
+}
+
+.login img {
+    display: inline-block;
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.login span {
+    font-size: 1rem;
+}
+
+.google {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.google div {
+    padding: 10px;
+    border: 1px wheat solid;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+.google div:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+
+/*sign-up page*/
+
+.register {
+    border: 1px solid black;
+    height: 50%;
+    margin-right: 14%;
+}
+
+.register-content input {
+    display: block;
+}
+
+.name {
+    display: flex;
+}
