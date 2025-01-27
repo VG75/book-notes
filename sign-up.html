@@ -18,48 +18,54 @@
     </div>
 
     <!-- Login Form -->
-    <div class="register">
-        <h1>Sign-up</h1>
-        <div class="register-content">
-            <form action="/register" method="post">
-                <div class="name">
-                    <div>
-                        <label for="first-name">First Name: </label>
-                        <input type="text" id="first-name" name="first-name" placeholder="First-name">
+    <div class="center">
+        <div class="login login-large-size">
+            <h1>Sign-up</h1>
+            <div class="login-content ">
+                <form action="/register" method="post">
+                    <div class="name">
+                        <div>
+                            <label for="first-name">First Name: </label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First-name">
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name: </label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last-name">
+                        </div>
+    
+                        
                     </div>
-                    <div>
-                        <label for="last-name">Last Name: </label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Last-name">
+                    <div class="email">
+                        <label for="username">Email:</label>
+                        <input type="email" id="username" name="username" placeholder="Email">
                     </div>
-
-                    
-                </div>
-                <div>
-                    <label for="username">Email:</label>
-                    <input type="email" id="username" name="username" placeholder="Email">
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Password">
-
-                    <label for="password">Confirm Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Password">
-                </div>
-                <button type="submit">Login</button>
-                <p>Have an account? <a href="./sign-up.html" id="sign-up">Log-in</a></p>
-                <p class="social">or connect with</p>
-            </form>
-        </div>
-        <div class="google">
-            <div>
-                <img src="./public/images/google.svg" alt="Google Icon">
-                <a class="btn btn-block" href="/auth/google" role="button">
-                Log In with Google
-                </a>
+                    <div class="password">
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <label for="password">Confirm Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <button type="submit">Sign-up</button>
+                    <p>Have an account? <a href="./sign-up.html" id="sign-up">Log-in</a></p>
+                    <p class="social">or connect with</p>
+                </form>
             </div>
-            
+            <div class="google">
+                <div>
+                    <img src="./public/images/google.svg" alt="Google Icon">
+                    <a class="btn btn-block" href="/auth/google" role="button">
+                    Log In with Google
+                    </a>
+                </div>
+                
+            </div>
         </div>
     </div>
+    
 </body>
 
 </html>

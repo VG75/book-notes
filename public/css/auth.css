@@ -5,8 +5,7 @@ body {
     padding: 0;
     background-color: #AED5CB;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: right;
+    
 }
 
 /* Logo Styling */
@@ -54,19 +53,31 @@ body {
     -webkit-backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.25); /* Slightly more opaque */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
-    position: fixed;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
+    
+    margin-left: 50%;
+    /* Center vertically */
     border: 1px solid rgba(255, 255, 255, 0.2); /* Glassy border */
     border-radius: 15px;
     padding: 20px 30px;
-    width: 30%;
     color: white;
     text-align: center;
     background-color: #057476;
     background: linear-gradient(145deg, #4ecdc4, #2e8b8d);
-    
+}
+
+.login-mid-size {
+    width: 30%;
+}
+
+.login-large-size {
+    width: 40%;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* Headline Styling */
@@ -78,6 +89,8 @@ body {
 
 /* Form Label Styling */
 .login label {
+    font-weight: 600; /* Medium weight for labels */
+    color: #004d40; 
     display: block;
     text-align: left;
     padding-bottom: 8px;
@@ -98,14 +111,17 @@ body {
     display: block;
     position: static;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     backdrop-filter: blur(6px);
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+   
+   
 }
 
 /* Placeholder Color */
 .login input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* Button Styling */
@@ -182,7 +198,6 @@ body {
     background: rgba(255, 255, 255, 0.25);
 }
 
-
 /*sign-up page*/
 
 .register {
@@ -197,4 +212,18 @@ body {
 
 .name {
     display: flex;
+    gap: 20px
+}
+
+.name div {
+    flex: 1;
+}
+
+.password {
+    display: flex;
+    gap: 20px;
+}
+
+.password div {
+    flex: 1;
 }
