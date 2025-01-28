@@ -1,6 +1,6 @@
 
 body {
-    background-color: #C4E2E9;
+    background-color: #D2E9EE;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,6 +13,7 @@ body {
 /*Header*/
 header {
     background-color: #89C6D2;
+   
 }
 
 header ul li {
@@ -67,6 +68,11 @@ a {
     margin-left: 18px;
 }
 
+.dropdown-item:hover {
+    background-color: #58bfd4;
+    color: white;
+}
+
 /*Hero*/
 
 .hero-container {
@@ -79,6 +85,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 90vh;
 }
 
 
@@ -98,3 +105,38 @@ footer {
 footer ul li {
     color: white;
 }
+
+                                   /***Book-info-page-styling****/
+
+.left-fixed-part {
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.book {
+    width: 128px;
+    height: 207px;
+    border: 1px black solid;
+}
+
+.add-to-fav img {
+    margin-right: 12px;
+}
+
+.btn:hover .bi-heart-fill {
+    color: black;
+}
+
+.star-container-holder {
+    display: flex;
+    gap: 10px;
+}
+
+
