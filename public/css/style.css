@@ -108,8 +108,33 @@ footer ul li {
 
                                    /***Book-info-page-styling****/
 
+
+.flex-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+ h1, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Serif';
+}
+
+ h1 {
+    font-weight: 600;
+    font-size: 39px;
+}
+
+ h3 {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+
+
+
 .left-fixed-part {
-    width: 20%;
+    min-width: 20%;
     height: 100vh;
     border-right: 1px solid black;
     display: flex;
@@ -117,7 +142,8 @@ footer ul li {
     padding: 48px;
     gap: 15px;
     align-items: center;
-    
+    position: sticky;
+    top: 0;
 }
 
 .book {
@@ -139,4 +165,163 @@ footer ul li {
     gap: 10px;
 }
 
+.right-part {
+    
+    font-family:'IBM Plex Serif';
+}
+
+.rating-data {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+    align-items: center;
+    
+}
+
+.rating-data h1 {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.rating-data p {
+    margin: 0;
+    padding-top: 3px;
+    
+}
+
+.total-rating {
+    display: flex;
+    gap: 10px;
+}
+
+a:hover .rating-data {
+    background-color: rgb(128, 128, 128, 0.2);
+}
+
+.book-info {
+    font-family: 'roboto';
+    max-width: 70%;
+    margin-top: 25px;
+}
+
+.edition-info div {
+    display: flex;
+    gap: 50px;
+    margin-top: 5px;
+    font-family: 'Roboto Serif';
+    font-size: 12px;
+}
+.book-info-que {
+    min-width: 100px;
+}
+
+                                            /**********  Community Notes section **********/
+
+
+.community-notes-section {
+    margin-top: 30px;
+}
+
+
+
+.all-notes {
+    margin-top: 20px;
+    width: 70%;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap: 30px;
+    grid-auto-rows: 1fr;
+}
+
+
+.notes-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+    padding: 5px;
+}
+
+.notes-card h3 {
+    font-family: 'IBM Plex Serif';
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.rating-read-btn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+                                            /****** Users rating Styling *******/
+
+
+#user-rating-dashboard {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.heading {
+    font-size: 28px;
+    font-family: 'IBM Plex Serif';
+    font-weight: 500;
+}
+
+
+.row {
+    width: 75%;
+}
+
+  
+  /* Three column layout */
+
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #ff9800;}
+  .bar-4 {width: 30%; height: 18px; background-color: #ff9800;}
+  .bar-3 {width: 10%; height: 18px; background-color: #ff9800;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #ff9800;}
+  
 
