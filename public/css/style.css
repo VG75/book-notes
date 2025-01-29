@@ -219,6 +219,27 @@ a:hover .rating-data {
 .book-info-que {
     min-width: 100px;
 }
+                                            /******** Your rating and review *******/
+
+
+.your-rating-review {
+    margin-top: 40px;
+}
+.your-rating-content {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.rating-review-button {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+
 
                                             /**********  Community Notes section **********/
 
@@ -247,7 +268,7 @@ a:hover .rating-data {
     padding: 5px;
 }
 
-.notes-card h3 {
+.notes-card h4 {
     font-family: 'IBM Plex Serif';
     font-weight: 500;
     margin-bottom: 5px;
@@ -268,7 +289,7 @@ a:hover .rating-data {
 
 #user-rating-dashboard {
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .heading {
@@ -279,7 +300,7 @@ a:hover .rating-data {
 
 
 .row {
-    width: 75%;
+    width: 70%;
 }
 
   
@@ -289,6 +310,7 @@ a:hover .rating-data {
     float: left;
     width: 15%;
     margin-top: 10px;
+    
   }
   
   .middle {
@@ -312,9 +334,10 @@ a:hover .rating-data {
   /* The bar container */
   .bar-container {
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: rgba(191, 170, 170, 0.6);
     text-align: center;
     color: white;
+    border-radius: 10px;
   }
   
   /* Individual bars */
@@ -324,4 +347,26 @@ a:hover .rating-data {
   .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
   .bar-1 {width: 15%; height: 18px; background-color: #ff9800;}
   
+                                    /*******User comments********/
+
+
+#user-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+}
+
+.user-comment {
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.user-comment-name-part h6{
+    font-size: 21px;
+}
+
 
