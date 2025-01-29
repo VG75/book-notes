@@ -248,7 +248,11 @@ a:hover .rating-data {
     margin-top: 30px;
 }
 
-
+.add-notes-section {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .all-notes {
     margin-top: 20px;
