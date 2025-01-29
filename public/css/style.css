@@ -408,11 +408,7 @@ a:hover .rating-data {
     padding-right: 20px;
 }
 
-.all-books.container {
-    margin-top: 30px;
-   
-   
-}
+
 
 .all-books-grid-container {
     display: grid;
@@ -462,5 +458,10 @@ a:hover .rating-data {
     color: black;
 }
 
-
+.sort-btn {
+   
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
 
