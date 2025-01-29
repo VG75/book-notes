@@ -384,6 +384,7 @@ a:hover .rating-data {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .search-area form {
@@ -399,6 +400,7 @@ a:hover .rating-data {
     border-color: white;
     padding: 5px;
     padding-left: 20px;
+    
 }
 .search-area .btn {
     border-radius: 20px;
@@ -408,7 +410,7 @@ a:hover .rating-data {
 
 .all-books.container {
     margin-top: 30px;
-    border: 1px solid black;
+   
    
 }
 
@@ -441,6 +443,23 @@ a:hover .rating-data {
 .book-view-btn {
     display: flex;
     justify-content: flex-end;
+}
+
+                                            /***Pagination***/
+
+
+.pagination-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.page-item.selected {
+    background-color: #58bfd4;
+    color: white;
+}
+
+.page-link {
+    color: black;
 }
 
 
