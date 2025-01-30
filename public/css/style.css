@@ -387,25 +387,27 @@ a:hover .rating-data {
    
 }
 
-.search-area form {
+.search-area, .isbn-book-search  form {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 40%;
 }
 
-.search-area input {
+.search-area, .isbn-book-search  input {
     flex: 1;
     border-radius: 20px;
     border-color: white;
     padding: 5px;
     padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
     
 }
-.search-area .btn {
+.search-area, .isbn-book-search  .btn {
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    
 }
 
 
@@ -463,5 +465,20 @@ a:hover .rating-data {
     margin-bottom: 15px;
     display: flex;
     justify-content: flex-end;
+}
+
+                                                /**************ISBN book search area*****************/
+                                
+.isbn-book-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-not-found {
+    margin-top: 15px;
+    font-size: larger;
+    color: red;
 }
 
