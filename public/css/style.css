@@ -482,3 +482,27 @@ a:hover .rating-data {
     color: red;
 }
 
+                                            /********view-new-book-info**********/
+
+.no-notes-added {
+    border: 1px solid black;
+    width: 70%;
+    min-height: 150px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.no-review-added {
+
+}
+.no-review-added {
+    border: 1px solid black;
+    width: 70%;
+    min-height: 150px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   font-size: 20px;
+   padding: 20px;
+}
