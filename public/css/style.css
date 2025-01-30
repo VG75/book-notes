@@ -506,3 +506,55 @@ a:hover .rating-data {
    font-size: 20px;
    padding: 20px;
 }
+
+
+                                                                /***************Write-notes****************/
+
+.notes-container {
+    min-height: 100vh;
+    margin-bottom: 20px;
+
+}
+
+.notes-container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.notes-container > form input {
+    text-align: center;
+    font-family: 'IBM Plex Serif';
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: white;
+}
+
+
+#author {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+#title {
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#notes-text {
+    width: 80%;
+    margin-top: 20px;
+    min-height: 70vh;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: white;
+    padding: 20px;
+    font-family: 'IBM Plex Serif';
+    margin-bottom: 20px;
+}
