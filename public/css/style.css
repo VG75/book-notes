@@ -44,7 +44,7 @@ header ul li {
     color: gray;
 }
 
-a {
+header a {
     text-decoration: none;
     color: black;
 }
@@ -561,91 +561,148 @@ a:hover .rating-data {
                                                             /*****************   Dashboard  ****************/
 
 .big-container {
-    width: 100%;
-    height: 160vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
+width: 100%;
+height: 160vh;
+display: flex;
+flex-direction: column;
+margin-top: 30px;
+align-items: center;
 }
 
 .dash-grid-container {
-    border: 1px solid black;
-    display: grid;
-    min-height: 140vh;
-    width: 80%;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 10px;
-    
+border: 1px solid black;
+display: grid;
+height: 140vh;
+width: 80%;
+grid-template-rows: repeat(8, 1fr);
+grid-template-columns: repeat(6, 1fr);
+grid-auto-rows: 1fr;
+gap: 10px;
+
 }
 
 .user-info-card {
-    border: 1px solid black;
-    grid-column: 1 / 5;
-    grid-row: 1/1.5;
+
+grid-column: 1 / 5;
+grid-row: 1/1.5;
 }
 
 .user-comments {
-    grid-column: 5 / -1;
-    grid-row: 1 / 3;
-    border: 1px solid black;
-    max-height: 3fr;  /* Adjust height as needed */
-    overflow-y: auto;
+grid-column: 5 / -1;
+grid-row: 1 / 3;
+border: 1px solid black;
+max-height: 350px;  /* Adjust height as needed */
+overflow-y: auto;
 }
 
 .user-comments .d-flex {
-    width: 100%; /* Ensure it adapts to grid size */
+width: 100%; /* Ensure it adapts to grid size */
 }
 
 .user-notes-books {
-    border: 1px solid black;
-    grid-column: 1 / -1;
-    grid-row: 3 / -1;
+border: 1px solid black;
+grid-column: 1 / -1;
+grid-row: 3 / -1;
+overflow-y: auto;
+padding: 15px;
 }
 
 .user-info-card {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    font-family: 'IBM Plex Serif';
-    
+display: flex;
+gap: 20px;
+padding: 20px;
+font-family: 'IBM Plex Serif';
+
 }
 
 .user-icon svg {
-    border-radius: 50%;
-    border: 2px solid black;
-    padding: 15px;
+border-radius: 50%;
+border: 2px solid black;
+padding: 15px;
 }
 
 .user-icon {
-    flex-basis: 26%;
+flex-basis: 26%;
 }
 
 .user-info {
-    flex: 1;
+flex: 1;
 }
 
 .user-info h2{
-    padding-bottom: 3px;
-    border-bottom: 1px solid black;
+padding-bottom: 3px;
+border-bottom: 1px solid black;
 }
 
 .user-info-flex {
-    display: flex;
+display: flex;
 }
 
 .user-info-flex p {
-    padding: 0;
-    margin: 0;
+padding: 0;
+margin: 0;
 }
 
 .user-info-ques {
-    flex-basis: 23%;
-    font-weight: 600;
+flex-basis: 23%;
+font-weight: 600;
 }
 
 .user-info-ans {
-    font-weight: 100;
+font-weight: 100;
 }
+
+.no-comments {
+font-size: 24px;
+font-weight: 100;
+}
+
+.semi-transparent-back {
+background-color: rgba(255, 255, 255, 0.6); /* White with 60% transparency */
+backdrop-filter: blur(5px); /* Optional: Adds a blur effect */
+border-radius: 10px; /* Optional: Adds rounded corners */
+padding: 10px; /* Optional: Adds spacing */
+}
+
+.notes-books-nav-sec {
+grid-column: 1 / 5;
+width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+height: auto;
+justify-content: space-between;
+}
+
+.notes-books-nav-sec h2 {
+font-family: 'IBM Plex Serif';
+font-weight: 700;
+}
+
+.notes-books-link {
+display: flex;
+gap: 20px;
+}
+
+.notes-books-link a {
+text-decoration: none;
+color: black;
+font-size: larger;
+}
+
+.notes-books-link a:hover {
+text-decoration: underline;
+color: white;
+}
+
+.notes-books-link a:active {
+color: gray;
+}
+
+.notes-books-nav-link {
+
+display: flex;
+gap: 20px;
+justify-content: space-between;
+} 
