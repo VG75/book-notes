@@ -494,9 +494,7 @@ a:hover .rating-data {
     padding: 20px;
 }
 
-.no-review-added {
 
-}
 .no-review-added {
     border: 1px solid black;
     width: 70%;
@@ -557,4 +555,97 @@ a:hover .rating-data {
     padding: 20px;
     font-family: 'IBM Plex Serif';
     margin-bottom: 20px;
+}
+
+
+                                                            /*****************   Dashboard  ****************/
+
+.big-container {
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.dash-grid-container {
+    border: 1px solid black;
+    display: grid;
+    min-height: 140vh;
+    width: 80%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 10px;
+    
+}
+
+.user-info-card {
+    border: 1px solid black;
+    grid-column: 1 / 5;
+    grid-row: 1/1.5;
+}
+
+.user-comments {
+    grid-column: 5 / -1;
+    grid-row: 1 / 3;
+    border: 1px solid black;
+    max-height: 3fr;  /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+.user-comments .d-flex {
+    width: 100%; /* Ensure it adapts to grid size */
+}
+
+.user-notes-books {
+    border: 1px solid black;
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+}
+
+.user-info-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'IBM Plex Serif';
+    
+}
+
+.user-icon svg {
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.user-icon {
+    flex-basis: 26%;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h2{
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+
+.user-info-flex {
+    display: flex;
+}
+
+.user-info-flex p {
+    padding: 0;
+    margin: 0;
+}
+
+.user-info-ques {
+    flex-basis: 23%;
+    font-weight: 600;
+}
+
+.user-info-ans {
+    font-weight: 100;
 }
