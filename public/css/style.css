@@ -265,12 +265,19 @@ a:hover .rating-data {
     grid-auto-rows: 1fr;
 }
 
+.note-written-by {
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
 
 .notes-card {
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 10px 10px 5px 12px lightblue;
     padding: 5px;
+}
+
+.notes-card:hover {
+    box-shadow: 10px 10px 5px 12px lightblue;
 }
 
 .notes-card h4 {
@@ -705,4 +712,27 @@ color: gray;
 display: flex;
 gap: 20px;
 justify-content: space-between;
-} 
+}
+
+.user-notes-books .all-notes {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap: 30px;
+    grid-auto-rows: 1fr;
+}
+
+.user-notes-books .note-written-date {
+    border-right: 2px solid black;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.read-edit-del {
+    margin: 15px auto 15px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
