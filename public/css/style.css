@@ -736,3 +736,50 @@ justify-content: space-between;
     gap: 20px;
     justify-content: space-around;
 }
+
+                                            /*Read notes page*/
+.read-container {
+    font-family: 'IBM Plex Serif';
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.notes-book-info {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.notes-book-info p {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.notes-book-info .book-specs {
+   
+}
+.notes-book-info .book-card {
+    justify-content: space-around;
+    border: none;
+}
+
+[class*="que"] {
+    font-style: italic;
+    font-weight: 600;
+    color: gray;
+    margin-right: 5px;
+}
+
+.notes-content {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.notes-content h2 {
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
